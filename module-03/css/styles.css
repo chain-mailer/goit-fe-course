@@ -9,30 +9,33 @@ html {
 
 body {
   margin: 0;
-  padding: 0px 80px;
+}
+
+.container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+ul {
+  margin: 0px;
 }
 
 .site-nav {
-  margin: 70px 0px 98px 0px;
-  padding: 0px 164px;
+  padding: 70px 164px 98px;
+  text-align: center;
 }
 
 .site-nav li {
   display: inline-block;
   box-sizing: border-box;
   text-transform: uppercase;
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display Regular", serif;
   font-size: 14px;
   line-height: 24px;
 }
 
 .site-nav :not(:last-child) {
   margin-right: 100px;
-}
-
-.container {
-  width: 900px;
-  margin: 0px auto;
 }
 
 a {
@@ -45,11 +48,16 @@ a:hover {
   color: #03a9f4;
 }
 
+a:focus {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
 article {
   display: inline-block;
   box-sizing: border-box;
-  width: 418px;
-  margin-right: 60px;
+  width: 420px;
+  margin-right: 56px;
   margin-bottom: 132px;
 }
 
@@ -66,20 +74,20 @@ img {
 
 .title {
   text-transform: uppercase;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu Light", serif;
   font-size: 14px;
   color: #b4ad9e;
 }
 
 p {
   margin: 0;
-  font-family: "PlayfairDisplay", serif;
+  font-family: "Playfair Display Regular", serif;
   color: #626262;
   line-height: 24px;
 }
 
 h2 {
-  font-family: "PlayfairDisplay";
+  font-family: "Playfair Display Regular", serif;
   font-size: 30px;
   color: #626262;
 }
@@ -97,7 +105,7 @@ button {
   width: 164px;
   height: 60px;
   font-size: 20px;
-  font-family: "PlayfairDisplay";
+  font-family: "PlayfairDisplay", serif;
   background-color: #ffffff;
   color: #626262;
   border-width: 1px;
