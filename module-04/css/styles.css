@@ -1,0 +1,270 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.claerfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* site navigation */
+.site-logo {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+
+.site-logo:first-letter {
+  font-weight: 700;
+  color: #1abc9c;
+}
+
+.menu {
+  margin-bottom: 96px;
+}
+
+.page-nav {
+  padding: 34px 0;
+}
+
+.site-navigation {
+  float: right;
+  width: 506px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.site-navigation li {
+  float: left;
+  margin-right: 30px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
+.site-navigation a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
+/* section-item */
+
+.products {
+  margin-bottom: 96px;
+}
+
+.fearured-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 62px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2::after {
+  display: block;
+  margin: 30px auto;
+  content: "";
+  width: 164px;
+  height: 8px;
+  background-color: #1abc9c;
+}
+
+.item {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 255px;
+  background-color: #000000;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  height: 282px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product1::before {
+  background-image: url("../img/product1.png");
+  background-color: #e9f0fd;
+}
+
+.product2::before {
+  background-image: url("../img/product2.png");
+  background-color: #e9f0fd;
+}
+
+.product3::before {
+  background-image: url("../img/product3.png");
+  background-color: #e9f0fd;
+}
+
+.product4::before {
+  background-image: url("../img/product4.png");
+  background-color: #e9f0fd;
+}
+
+.product5::before {
+  background-image: url("../img/product5.png");
+  background-color: #e9f0fd;
+}
+
+.product6::before {
+  background-image: url("../img/product6.png");
+  background-color: #e9f0fd;
+}
+
+.product7::before {
+  background-image: url("../img/product7.png");
+  background-color: #e9f0fd;
+}
+
+.product8::before {
+  background-image: url("../img/product8.png");
+  background-color: #e9f0fd;
+}
+
+.item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.name-item {
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px;
+  width: 201px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fff;
+}
+
+.price {
+  float: right;
+  box-sizing: border-box;
+  width: 54px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.item:hover .name-item {
+  background-color: #1abc9c;
+  transition: 0.3s;
+}
+
+.item:hover .price {
+  background-color: #7fd9c7;
+}
+
+/* blog */
+
+.news {
+  margin-bottom: 82px;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+}
+
+.blog {
+  float: left;
+  margin-right: 30px;
+  width: 350px;
+  list-style: none;
+}
+
+.blog h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.blog h3::after {
+  display: block;
+  margin: 10px 0;
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+}
+
+.blog p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.blog:last-child {
+  margin-right: 0;
+}
+
+.read-button {
+  border: none;
+  margin: 0;
+  padding: 16px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 2px;
+  background-color: #4ec6ab;
+  color: #ffffff;
+}
+
+.read-button:hover {
+  transition: 0.5s ease-in-out;
+  color: #4ec6ab;
+  background-color: #ffffff;
+}
