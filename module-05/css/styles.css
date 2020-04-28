@@ -74,7 +74,7 @@ main {
   float: right;
   margin: 0 auto;
   padding: 0;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .site-menu__item {
@@ -89,7 +89,7 @@ main {
 .site-menu__item__link {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 10px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -100,6 +100,7 @@ main {
 }
 
 /* SLIDER */
+
 .section__slider {
   position: relative;
 }
@@ -121,7 +122,8 @@ main {
 .slider__button {
   content: "";
   position: absolute;
-  top: 230px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slider__left {
@@ -203,16 +205,18 @@ main {
 .list-item {
   float: left;
   position: relative;
+  width: 255px;
 }
 
 .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.list-item__blok {
+  position: relative;
+}
+
 .list-item__name-block {
-  position: absolute;
-  content: "";
-  bottom: 0;
   background-color: #000000;
 }
 
@@ -249,8 +253,8 @@ main {
   visibility: hidden;
   content: "";
   top: 0;
-  width: 255px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-width: 10px;
   border-color: rgba(255, 255, 255, 0.5);
@@ -354,8 +358,8 @@ main {
 
 .footer-link {
   display: inline-block;
-  color: #ffffff;
+  color: rgb(26, 188, 156);
 }
 .footer-link:hover {
-  color: #1abc9c;
+  color: rgba(26, 188, 156, 0.75);
 }
