@@ -247,7 +247,7 @@ a {
   width: 980px;
   margin: 0 auto;
   font-family: var(--secondary-font);
-  font-size: 15;
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
