@@ -210,7 +210,9 @@ a {
 }
 
 /* TEEM */
-
+.teem {
+  margin-bottom: 80px;
+}
 .teem__title {
   display: flex;
   flex-direction: column;
@@ -342,7 +344,6 @@ a {
 }
 
 .teem__list-item__work {
-  margin-bottom: 80px;
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: 15px;
