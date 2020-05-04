@@ -209,11 +209,11 @@ a {
   color: #999999;
 }
 
-/* TEEM */
-.teem {
+/* TEAM */
+.team {
   margin-bottom: 80px;
 }
-.teem__title {
+.team__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,7 +223,7 @@ a {
   text-transform: uppercase;
 }
 
-.teem__title::after {
+.team__title::after {
   display: block;
   content: "";
   width: 60px;
@@ -233,17 +233,17 @@ a {
   transition: 200ms;
 }
 
-.teem__title:hover::after {
+.team__title:hover::after {
   width: 262px;
 }
 
-.teem__name {
+.team__name {
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   text-transform: none;
 }
 
-.teem__about {
+.team__about {
   width: 980px;
   margin: 0 auto;
   font-family: var(--secondary-font);
@@ -255,14 +255,14 @@ a {
   margin-bottom: 96px;
 }
 
-.teem__list {
+.team__list {
   display: flex;
   justify-content: space-between;
   align-content: center;
   position: relative;
 }
 
-.teem__list-item {
+.team__list-item {
   position: relative;
   text-align: center;
 }
@@ -319,23 +319,23 @@ a {
   border-color: #95e1d3;
 }
 
-.teem__list-item:hover .overlay {
+.team__list-item:hover .overlay {
   visibility: visible;
   opacity: 1;
   transform: translate(-10px, -10px);
 }
 
-.teem__list-item-image {
+.team__list-item-image {
   margin-bottom: 28px;
   transition: 200ms;
 }
 
-.teem__list-item:hover .teem__list-item-image {
+.team__list-item:hover .team__list-item-image {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
 }
 
-.teem__list-item__name {
+.team__list-item__name {
   margin-bottom: 10px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -343,7 +343,7 @@ a {
   text-transform: uppercase;
 }
 
-.teem__list-item__work {
+.team__list-item__work {
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: 15px;
