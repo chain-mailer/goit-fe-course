@@ -265,6 +265,7 @@ a {
 .team__list-item {
   position: relative;
   text-align: center;
+  width: 380px;
 }
 
 .overlay {
@@ -391,6 +392,9 @@ a {
   font-family: var(--secondary-font);
   font-style: italic;
   font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
   color: #cccccc;
 }
 
