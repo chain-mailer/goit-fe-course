@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Homework-07</title>
+  </head>
+
+  <body>
+    <header class="menu">
+      <nav class="menu__navigation container">
+        <a href="#" class="site-logo">Golden</a>
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a href="#" class="site-menu__item-link">home</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#" class="site-menu__item-link">services</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#" class="site-menu__item-link">portfolio</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#" class="site-menu__item-link">about</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#" class="site-menu__item-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="sevices container">
+        <h2 class="services-title">services</h2>
+        <p class="services-about">Proin iaculis purus consequat sem cure.</p>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <h3 class="services__list-item__title">E-Commerce</h3>
+            <p class="services__list-item__description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="services__list-item">
+            <h3 class="services__list-item__title">Responsive Web</h3>
+            <p class="services__list-item__description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="services__list-item">
+            <h3 class="services__list-item__title">Web Security</h3>
+            <p class="services__list-item__description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact-title">contact us</h2>
+          <p class="contact-about">Proin iaculis purus consequat sem cure.</p>
+          <form action="#">
+            <div class="contact-form">
+              <div class="contact-form__left">
+                <input
+                  name="user_name"
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="your name*"
+                  required
+                  minlength="2"
+                />
+                <input
+                  name="user_email"
+                  type="email"
+                  class="contact-form__input"
+                  placeholder="your email*"
+                  required
+                />
+                <input
+                  name="user_subject"
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="subject"
+                />
+              </div>
+
+              <div class="contact-form__right">
+                <textarea
+                  name="user_message"
+                  class="contact-form__textarea"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="your message*"
+                  minlength="10"
+                  maxlength="600"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contact-btn">send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+/* pacifico-regular - latin */
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"),
+    url("../fonts/pacifico-v16-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pacifico-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* tinos-italic - latin */
+@font-face {
+  font-family: "Tinos";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Tinos Italic"), local("Tinos-Italic"),
+    url("../fonts/tinos-v13-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/tinos-v13-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", serif;
+  --main-color: #222222;
+  --secondary-color: #777777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* SITE-NAVIGATION */
+.menu__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  margin-bottom: 114px;
+}
+
+.site-logo {
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+  color: #fed136;
+}
+
+.site-menu {
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.site-menu__item-link {
+  color: var(--main-color);
+}
+
+.site-menu__item-link:hover,
+.site-menu__item-link:focus {
+  color: #fed136;
+}
+
+.site-menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* SERVICES */
+.sevices {
+  position: relative;
+  margin-bottom: 102px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.services-title,
+.contact-title {
+  margin-bottom: 14px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.services-about,
+.contact-about {
+  margin-bottom: 76px;
+  font-family: "Tinos";
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__list-item {
+  position: relative;
+  padding-top: 96px;
+  width: 290px;
+}
+
+.services__list-item__title {
+  margin-bottom: 14px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.services__list-item__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.services__list-item::before {
+  content: "";
+  position: absolute;
+  left: 108px;
+  top: 0px;
+  width: 74px;
+  height: 74px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+}
+
+.services__list-item:first-child::before {
+  background-image: url("../img/icons/basket.png");
+}
+
+.services__list-item:nth-child(2)::before {
+  background-image: url("../img/icons/laptop.png");
+}
+
+.services__list-item:last-child::before {
+  background-image: url("../img/icons/locked.png");
+}
+
+.services__list-item:hover .services__list-item::before {
+  transition-property: all;
+  transition-duration: 1.2s;
+  border-color: rgb(254, 61, 54);
+}
+
+/* CONTACT */
+.contact {
+  padding-top: 98px;
+  padding-bottom: 114px;
+  background-color: var(--main-color);
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 120px;
+  text-align: center;
+}
+
+.contact-title {
+  color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.contact-form__left {
+  margin-right: 28px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  padding-left: 20px;
+  width: 460px;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border: 1px solid #fed136;
+  box-shadow: inset 0px 0px 4px 0px #fed136;
+}
+
+.contact-form__input:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.contact-form__input {
+  border-radius: 2px;
+  height: 52px;
+}
+
+.contact-form__textarea {
+  border-radius: 5px;
+  height: 212px;
+  resize: none;
+  padding-top: 20px;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.contact-form__input:required:valid:not(:placeholder-shown),
+.contact-form__textarea:required:valid:not(:placeholder-shown) {
+  border-color: rgb(10, 200, 10);
+  box-shadow: inset 0px 0px 4px rgb(10, 200, 10);
+}
+
+.contact-form__input:required:invalid:not(:placeholder-shown),
+.contact-form__textarea:required:invalid:not(:placeholder-shown) {
+  border-color: rgb(255, 0, 0);
+  box-shadow: inset 0px 0px 4px rgb(255, 0, 0);
+}
+
+.contact-btn {
+  width: 240px;
+  height: 66px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  cursor: pointer;
+}
+
+.contact-btn:active,
+.contact-btn:focus {
+  box-shadow: 0px 0px 5px rgb(254, 209, 54);
+  outline: none;
+}
