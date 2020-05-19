@@ -107,6 +107,10 @@ a {
   text-transform: uppercase;
 }
 
+.sitelogo:hover {
+  color: rgb(255, 78, 80);
+}
+
 .site-navigation-btn {
   margin-bottom: 112px;
 }
@@ -120,10 +124,17 @@ a {
   border-radius: 18px;
   width: 94px;
   height: 36px;
+  transition: 0.2s;
 }
 
 .log-in-btn {
   border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.log-in-btn:hover,
+.sing-up-btn:hover {
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: inset 0 0 7px rgb(255, 255, 255);
 }
 
 .header-title {
@@ -146,6 +157,10 @@ a {
   width: 280px;
   height: 40px;
   font-size: 14px;
+}
+
+.header-btn:hover {
+  box-shadow: 0 0 5px rgb(255, 21, 25);
 }
 
 /* partner */
@@ -243,6 +258,12 @@ a {
   font-size: 14px;
   color: #ff4e50;
   margin-bottom: 56px;
+}
+
+.partner-btn:hover {
+  border: 2px solid #ff4e50;
+  background-color: #ff4e50;
+  color: #ffffff;
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
