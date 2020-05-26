@@ -1,0 +1,307 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 138px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(26, 25, 21);
+  background-size: 100%;
+  background-image: url(../img/mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.authorization-list {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.log-in-link,
+.sign-up-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 94px;
+  height: 36px;
+}
+
+.log-in-link {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.log-in-link,
+.sign-up-link,
+.logotype,
+.header-btn {
+  color: #ffffff;
+}
+
+.logotype {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.header-title {
+  margin-bottom: 10px;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+.header-description {
+  margin-bottom: 14px;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.header-btn {
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+}
+
+/* PERSONS */
+main {
+  padding-top: 66px;
+}
+
+.partner-title,
+.partner-list-item__name {
+  font-family: var(--main-font);
+  font-weight: 700;
+  color: #333333;
+}
+
+.partner-list {
+  margin-bottom: 30px;
+}
+
+.partner-title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.partner-list-item__description {
+  margin: 0 auto;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+  max-width: 234px;
+}
+
+.partner-list-item {
+  position: relative;
+  text-align: center;
+}
+
+.partner-list-item img {
+  margin-bottom: 20px;
+}
+
+.partner-list-item__name {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .authorization {
+    margin-bottom: 30px;
+  }
+
+  .authorization-list {
+    margin-bottom: 116px;
+  }
+
+  .partner-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.partner-list-item::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 184px;
+  top: 82px;
+  width: 40px;
+  height: 40px;
+}
+
+.partner-list-item__image-first::after {
+  background-color: #ff4e50;
+  background-image: url(../img/icons/tv.png);
+}
+
+.partner-list-item__image-second::after {
+  background-color: #ffa507;
+  background-image: url(../img/icons/flask.png);
+}
+
+.partner-list-item__image-third::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/icons/cup.png);
+}
+
+.partner-list-item__image-fourth::after {
+  background-color: #4e73db;
+  background-image: url(../img/icons/telegram.png);
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.partner-btn {
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 280px;
+  height: 40px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff4e50;
+  margin-bottom: 56px;
+}
+
+.partner-btn:hover,
+.partner-btn:focus {
+  background-color: #ff4e50;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .header {
+    background-image: url(../img/tablet.png);
+    padding-top: 38px;
+    padding-bottom: 234px;
+  }
+
+  .authorization {
+    margin-bottom: 136px;
+  }
+
+  .header-title {
+    margin-bottom: 30px;
+    font-size: 52px;
+  }
+
+  .header-description {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .header-btn {
+    width: 226px;
+    height: 40px;
+  }
+
+  .partner-title {
+    margin-bottom: 28px;
+  }
+
+  .partner-btn {
+    width: 192px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header {
+    background-image: url(../img/desktop.png);
+    background-size: cover;
+  }
+}
