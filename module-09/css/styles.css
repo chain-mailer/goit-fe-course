@@ -304,4 +304,7 @@ main {
     background-image: url(../img/desktop.png);
     background-size: cover;
   }
+
+  .partner-list-item::after {
+    left: 144px;
 }
