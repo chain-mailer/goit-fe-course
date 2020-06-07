@@ -1,0 +1,47 @@
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  min-height: 240px;
+}
+
+.services-list__item {
+  display: flex;
+  width: 380px;
+  text-align: start;
+}
+
+.icon-wraper {
+  margin-right: 28px;
+}
+
+.services-icon {
+  width: 32px;
+  height: 32px;
+  fill: rgb(149, 225, 211);
+}
+
+.services-list__item:hover .services-icon {
+  fill: $second-color;
+}
+
+.services-list__title {
+  display: block;
+  margin-bottom: 18px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.services-list__description,
+.team__about,
+.team-list__work {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}

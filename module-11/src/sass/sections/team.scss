@@ -1,0 +1,94 @@
+.team {
+  margin-bottom: 80px;
+}
+
+.team__about {
+  margin: 0 100px;
+  margin-bottom: 96px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+}
+
+.team-list__item {
+  position: relative;
+  text-align: center;
+  width: 380px;
+}
+
+.team-list__item:hover .team-list__item-image {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  transition: 200ms;
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9) 0%,
+    rgba(252, 227, 138, 0.9) 100%
+  );
+}
+
+.team-list__item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-10px, -10px);
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list__item-link {
+  width: 56px;
+  height: 56px;
+  border: 1px solid $second-color;
+  background-color: $first-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 200ms;
+}
+
+.social-icons {
+  width: 50%;
+  height: 100%;
+  fill: $second-color;
+}
+
+.social-list__item-link:hover .social-icons {
+  fill: $white-color;
+}
+
+.social-list__item-link:hover {
+  background-color: $second-color;
+}
+
+.team-list__item-image {
+  margin-bottom: 28px;
+  transition: 200ms;
+}
+
+.team-list__name {
+  margin-bottom: 10px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.team-list__work {
+  font-style: italic;
+}
